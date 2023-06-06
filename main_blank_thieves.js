@@ -121,7 +121,7 @@ There are two possible outcomes of a promise
 // console.log(fetch('https://pokeapi.co/api/v2/pokemon/ditto'))
 
 // 2 ways to handle promises
-// first way using callbacks: .then(resolved) / .catch(reject)
+// first way using callbacks: .then(resolved) / .catch(reject) --------> "CALLBACK HELL" -----SEE REC'g
 fetch('https://pokeapi.co/api/v2/pokemon/ditto')
 .then(() => {})
 
@@ -129,4 +129,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/ditto')
 
 // viewing our data if promise resolved: 200 status code
 
-// Second way: Using async/await (ES6)
+// Second way: Using async/await (ES6) ---- NEWER WAY BELOW/CLEANER WAY
+const pokemonData = async () => {
+
+
+
+}
