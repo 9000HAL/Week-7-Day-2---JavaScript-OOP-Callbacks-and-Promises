@@ -152,30 +152,68 @@ person1.printInfo();
     Using the Ergast API, fetch to 'http://ergast.com/api/f1/2008/5/driverStandings.json'
     handle the promise with callbacks (.then(), .catch()) or async/await, and log the data.
 */
+// ***** CURRENTLY INCOMPLETE / FURTHER STUDYING TONIGHT *****
 
 
 
 
 
+// And answer 2 code wars problems for tonight as well. 
+// One that you've done previously in python, one that you have not yet done. 
+// All must be produced in JavaScript.
 
 
+//==================CODEWARS Problem #1 ==========// ---> "done previously in python"
 
-//==================CODEWARS Problem #1 ==========//
+// CODEWARS/PYTHON PROBLEM #1 LINK: https://www.codewars.com/kata/reviews/54272ba8e80d824cb80001f7/groups/54272ba8e80d824cb80001f9
 
-// CODEWARS/PYTHON PROBLEM #1 LINK: 
+// DEFINE the function to transform a number to a string
+function numberToString(num) {
+    // Convert the number to a string using the String() function
+    // and return the resulting string
+    return String(num);
+  }
+  
+  // Call the function and assign the returned string to a variable
+  var result = numberToString(123);
+  
+  // Print the output
+  console.log(result);
 
 
 //Console Output:
+/*
+"123"
+*/
 
 
 
 
+//==================CODEWARS Problem #2 ==========// ---> "one that you have not yet done"
 
+// CODEWARS/JavaScript *NEW* PROBLEM #2 LINK: https://www.codewars.com/kata/reviews/53dc23d121a252d19500007d/groups/53dc48ee2259ed51ef00064b
 
+//Sentence Smash
+//Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. 
+//You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. 
+//Be careful, there shouldn't be a space at the beginning or the end of the sentence!
 
-
-//==================CODEWARS Problem #2 ==========//
-
-// CODEWARS/PYTHON PROBLEM #2 LINK: 
+// DEFINE the function to smash words into a sentence
+function smash(words) {
+    // Array.join() to concatenate the words with spaces in between
+    // return the resulting sentence
+    return words.join(" ");
+  }
+  
+  // TEST the function with an example array of words
+  var wordsArray = ["Hello", "world", "this", "is", "a", "sentence"];
+  
+  // CALL the function and ASSIGN the returned sentence to a variable
+  var sentence = smash(wordsArray);
+  
+  // PRINT the output
+  console.log(sentence);
+  
 
 //Console Output:
+// "Hello world this is a sentence"
