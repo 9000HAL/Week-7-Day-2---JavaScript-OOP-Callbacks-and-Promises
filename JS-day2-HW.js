@@ -153,6 +153,13 @@ person1.printInfo();
     handle the promise with callbacks (.then(), .catch()) or async/await, and log the data.
 */
 
+// --- SOLUTION OPTION #1: Using callbacks "then()" and "catch()"
+//Use the fetch() function to make a GET request to the Ergast API endpoint. Here's the code to do that:
+
+
+
+
+
 
 
 
