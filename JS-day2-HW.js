@@ -149,21 +149,78 @@ person1.printInfo();
 
 // ============= Exercise #3 ============//
 /*
-    Using the Ergast API, fetch to 'http://ergast.com/api/f1/2008/5/driverStandings.json'
-    handle the promise with callbacks (.then(), .catch()) or async/await, and log the data.
+    "Using the Ergast API, fetch to 'http://ergast.com/api/f1/2008/5/driverStandings.json'
+    handle the promise with callbacks (.then(), .catch()) or async/await, and log the data.""
 */
 
-// --- SOLUTION OPTION #1: Using callbacks "then()" and "catch()"
-//Use the fetch() function to make a GET request to the Ergast API endpoint. Here's the code to do that:
+
+///// --- SOLUTION OPTION #1: Using callbacks "then()" and "catch()" --- /////
+
+//handle the Promise returned by the fetch() function: using callbacks then() and catch()
+
+//Use the fetch() function to make a GET request to the Ergast API endpoint
+
+fetch('http://ergast.com/api/f1/2008/5/driverStandings.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function(error) {
+    console.log('Error:', error);
+  });
+
+  //CONSOLE OUTPUT:
+  /*
+  {
+    MRData: {
+      xmlns: 'http://ergast.com/mrd/1.5',
+      series: 'f1',
+      url: 'http://ergast.com/api/f1/2008/5/driverstandings.json',
+      limit: '30',
+      offset: '0',
+      total: '22',
+      StandingsTable: { season: '2008', round: '5', StandingsLists: [Array] }
+    }
+  }
+*/
 
 
+//Use the fetch() function to make a GET request to the Ergast API endpoint
 
 
+///// --- SOLUTION OPTION #2: Using callbacks "then()" and "catch()" --- /////
 
+//handle the Promise returned by the fetch() function using  "async/await":
 
+async function getData() {
+  try {
+    //Use the fetch() function to make a GET request to the Ergast API endpoint
+    const response = await fetch('http://ergast.com/api/f1/2008/5/driverStandings.json');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log('Error:', error);
+  }
+}
 
+getData();
 
-
+//CONSOLE OUTPUT:
+  /*
+  {
+    MRData: {
+      xmlns: 'http://ergast.com/mrd/1.5',
+      series: 'f1',
+      url: 'http://ergast.com/api/f1/2008/5/driverstandings.json',
+      limit: '30',
+      offset: '0',
+      total: '22',
+      StandingsTable: { season: '2008', round: '5', StandingsLists: [Array] }
+    }
+  }
+*/
 
 
 
