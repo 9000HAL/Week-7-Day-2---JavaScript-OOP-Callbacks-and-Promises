@@ -152,7 +152,23 @@ person1.printInfo();
     Using the Ergast API, fetch to 'http://ergast.com/api/f1/2008/5/driverStandings.json'
     handle the promise with callbacks (.then(), .catch()) or async/await, and log the data.
 */
-// ***** CURRENTLY INCOMPLETE / FURTHER STUDYING TONIGHT *****
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
